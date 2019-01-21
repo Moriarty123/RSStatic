@@ -1,0 +1,32 @@
+.navbar-default {
+	height: 80px;
+	background-color:#343A40;
+	color:#8097A0;
+	font-size: 20px;
+
+}
+
+.navbar-collapse {
+	margin-top:14px;
+}
+
+.navbar-default .navbar-nav {
+	padding:0px;
+	margin:0px;
+}
+
+.navbar-default .navbar-nav li a {
+	color:#CCC;
+}
+
+.navbar-default .navbar-nav li a:link {
+	color:#CCC;
+}
+
+.navbar-default .navbar-nav li a:hover {
+	color:#00C1DE;
+	
+}
+
+
+

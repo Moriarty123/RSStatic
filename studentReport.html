@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>计算机学院实验报告在线撰写系统</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" href="./css/bootstrap-3.3.7/bootstrap4.1.0.min.css"> -->
+	<link rel="icon" href="./images/school.ico" type="images/x-icon"/>
+	<link rel="stylesheet" href="./css/bootstrap-3.3.7/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/index/footer.css">
+	<!-- <link rel="stylesheet" type="text/css" href="./css/student/index.css"> -->
+	<link rel="stylesheet" type="text/css" href="./css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="./css/student/report.css">
+	<link rel="stylesheet" type="text/css" href="./fontawesome-5.5.0/css/all.css" />
+
+	<script src="./js/bootstrap/jquery3.2.1.min.js"></script>
+	<script src="./js/bootstrap/popper.min.js"></script>
+	<script src="./js/bootstrap/bootstrap3.3.7.min.js"></script>
+
+</head>
+
+<style type="text/css">
+	* {
+		margin: 0px; 
+		padding: 0px;
+	}
+
+	body {
+		background: #f4f4f4;
+	}
+</style>
+
+<body>
+
+
+	<header>
+		<nav class="navbar navbar-default" >
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">
+						<!-- 设置margin-top,避免logo太大 -->
+						<img  class="img-circle" alt="Brand" style="max-width:90px;margin-top:-7px;" src="./images/school.png">
+					</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="color: #FFF; ">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="studentCourse.html">我的实验课程</a></li>
+						<li><a href="studentTask.html">我的实验任务</a></li>
+						<li><a href="studentReport.html">我的实验报告</a></li>
+						<li><a href="studentScore.html">我的成绩</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">统计 <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li style="width: 150px; "><a href="#">成绩统计</a></li>
+								<li ><a href="#">学生统计</a></li>
+							</ul>
+						</li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li>欢迎你，<a href="#" style="display: inline-block;">tyt</a></li>
+						<li><a href="#">退出</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+	</header>
+
+	<!-- 我的实验报告开始 -->
+	<div id="" class="report-container">
+		<div id="" class="report-padding">
+			<div class="report-title">
+				<h3>我的实验报告</h3>
+			</div>
+			<div class="report-msg">
+				<i class="fa fa-info-circle"></i>
+				<span style="margin-left: 5px;">共搜索到 9 条数据</span>
+			</div>
+
+			<!-- 我的实验报告列表开始 -->
+			<div class="reportDiv" style=""> 
+				<form>
+				<table class="reportTable" style="width: 100%; ">
+					<thead>
+						<tr>
+							<th style="width: 30px;"><input type="checkbox" name="fullChoose" onclick="fullChecked(this)" /></th>
+							<th>实验课程</th>
+							<th>实验任务</th>
+							<th>实验指导</th>
+							<th>截止时间</th>
+							<th style="position: relative; top:0px; left:0px;">
+								提交状态
+								<span id="submitedFilter">
+									<i class="fa fa-filter" title="筛选"></i>
+								</span>
+								<div id="submitedFilterDiv" class="submitedFilterDiv" >
+									<form >
+										<div class="submitedFilterRadio">	
+											<label><input name="submited" type="radio"/>未提交</label>
+										</div>
+										<div class="submitedFilterRadio">
+											<label><input name="submited" type="radio"/>已提交</label>
+										</div>
+										
+										<!-- <a href="" style="float: left; margin-left: 5px; ">确认</a>
+										<a href="" style="float: right; margin-right: 5px;">重置</a> -->
+										<!-- <hr style="border:1px solid #F0F0F0; "> -->
+										<div>
+											<input type="submit" name="" class="submit">
+											<input type="reset" name="" class="reset">
+										</div>
+									</form>
+								</div>
+							</th>
+							<th style="position: relative; top:0px; left:0px;">
+								批阅状态
+								<span id="markedFilter">
+									<i class="fa fa-filter" title="筛选"></i>
+								</span>
+								<div id="markedFilterDiv" class="markedFilterDiv" >
+									<form >
+										<div class="markedFilterRadio">	
+											<label><input name="marked" type="radio"/>未批阅</label>
+										</div>
+										<div class="markedFilterRadio">
+											<label><input name="marked" type="radio"/>已批阅</label>
+										</div>
+										
+										<!-- <a href="" style="float: left; margin-left: 5px; ">确认</a>
+										<a href="" style="float: right; margin-right: 5px;">重置</a> -->
+										<!-- <hr style="border:1px solid #F0F0F0; "> -->
+										<div>
+											<input type="submit" name="" class="submit">
+											<input type="reset" name="" class="reset">
+										</div>
+									</form>
+								</div>
+							</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td style="width: 30px;"><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$vo.user_id}"/></td>
+							<td>计算机网络</td>
+							<td>实验1  分组嗅探器的使用和网络协议的层次观察</td>
+							<td>查看实验指导</td>
+							<td>2018-09-17 15:45</td>
+							<td style="color: rgb(16, 142, 233)">未提交</td>
+							<td style="color: rgb(16, 142, 233)">未评阅</td>
+							<td>
+								<div style="margin-left: 5px; width: 30px;float: left;">
+									<a href="">
+										<i class="fa fa-eye" title="查看"></i>
+									</a>
+								</div>
+								<div style="margin-left: 5px; width: 30px;float: left;">
+									<a href="">
+										<i class="fa fa-edit" title="编辑"></i>
+									</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 30px;"><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$vo.user_id}"/></td>
+							<td>无线传感器网络与物联网通信技术</td>
+							<td>实验二 UHF900M识别多个标签实验</td>
+							<td>查看实验指导</td>
+							<td>2018-09-14 16:30</td>
+							<td style="color: rgb(32, 163, 15)">已提交</td>
+							<td style="color: rgb(32, 163, 15)">已评阅</td>
+							<td>
+								<div style="margin-left: 5px; width: 30px;float: left;">
+									<a href="">
+										<i class="fa fa-eye" title="查看"></i>
+									</a>
+								</div>
+								<div style="margin-left: 5px; width: 30px;float: left;">
+									<a href="">
+										<i class="fa fa-file-export" title="导出"></i>
+									</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 30px;"><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$vo.user_id}"/></td>
+							<td>计算机网络</td>
+							<td>实验1  分组嗅探器的使用和网络协议的层次观察</td>
+							<td>查看实验指导</td>
+							<td>2018-09-09 16:00</td>
+							<td style="color: rgb(32, 163, 15)">已提交</td>
+							<td style="color: rgb(16, 142, 233)">未评阅</td>
+							<td>
+								<div style="margin-left: 5px; width: 30px;float: left;">
+									<a href="">
+										<i class="fa fa-eye" title="查看"></i>
+									</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 30px;"><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$vo.user_id}"/></td>
+							<td>计算机网络</td>
+							<td>实验1  分组嗅探器的使用和网络协议的层次观察</td>
+							<td>查看实验指导</td>
+							<td>2018-09-17 15:45</td>
+							<td style="color: rgb(16, 142, 233)">未提交</td>
+							<td style="color: rgb(16, 142, 233)">未评阅</td>
+							<td>
+								<div style="margin-left: 5px; width: 30px;float: left;">
+									<a href="">
+										<i class="fa fa-eye" title="查看"></i>
+									</a>
+								</div>
+								<div style="margin-left: 5px; width: 30px;float: left;">
+									<a href="">
+										<i class="fa fa-edit" title="编辑"></i>
+									</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 30px;"><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$vo.user_id}"/></td>
+							<td>无线传感器网络与物联网通信技术</td>
+							<td>实验二 UHF900M识别多个标签实验</td>
+							<td>查看实验指导</td>
+							<td>2018-09-14 16:30</td>
+							<td style="color: rgb(32, 163, 15)">已提交</td>
+							<td style="color: rgb(32, 163, 15)">已评阅</td>
+							<td>
+								<div style="margin-left: 5px; width: 30px;float: left;">
+									<a href="">
+										<i class="fa fa-eye" title="查看"></i>
+									</a>
+								</div>
+								<div style="margin-left: 5px; width: 30px;float: left;">
+									<a href="">
+										<i class="fa fa-file-export" title="导出"></i>
+									</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 30px;"><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$vo.user_id}"/></td>
+							<td>计算机网络</td>
+							<td>实验1  分组嗅探器的使用和网络协议的层次观察</td>
+							<td>查看实验指导</td>
+							<td>2018-09-09 16:00</td>
+							<td style="color: rgb(32, 163, 15)">已提交</td>
+							<td style="color: rgb(16, 142, 233)">未评阅</td>
+							<td>
+								<div style="margin-left: 5px; width: 30px;float: left;">
+									<a href="">
+										<i class="fa fa-eye" title="查看"></i>
+									</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 30px;"><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$vo.user_id}"/></td>
+							<td>计算机网络</td>
+							<td>实验1  分组嗅探器的使用和网络协议的层次观察</td>
+							<td>查看实验指导</td>
+							<td>2018-09-17 15:45</td>
+							<td style="color: rgb(16, 142, 233)">未提交</td>
+							<td style="color: rgb(16, 142, 233)">未评阅</td>
+							<td>
+								<div style="margin-left: 5px; width: 30px;float: left;">
+									<a href="">
+										<i class="fa fa-eye" title="查看"></i>
+									</a>
+								</div>
+								<div style="margin-left: 5px; width: 30px;float: left;">
+									<a href="">
+										<i class="fa fa-edit" title="编辑"></i>
+									</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 30px;"><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$vo.user_id}"/></td>
+							<td>无线传感器网络与物联网通信技术</td>
+							<td>实验二 UHF900M识别多个标签实验</td>
+							<td>查看实验指导</td>
+							<td>2018-09-14 16:30</td>
+							<td style="color: rgb(32, 163, 15)">已提交</td>
+							<td style="color: rgb(32, 163, 15)">已评阅</td>
+							<td>
+								<div style="margin-left: 5px; width: 30px;float: left;">
+									<a href="">
+										<i class="fa fa-eye" title="查看"></i>
+									</a>
+								</div>
+								<div style="margin-left: 5px; width: 30px;float: left;">
+									<a href="">
+										<i class="fa fa-file-export" title="导出"></i>
+									</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 30px;"><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$vo.user_id}"/></td>
+							<td>计算机网络</td>
+							<td>实验1  分组嗅探器的使用和网络协议的层次观察</td>
+							<td>查看实验指导</td>
+							<td>2018-09-09 16:00</td>
+							<td style="color: rgb(32, 163, 15)">已提交</td>
+							<td style="color: rgb(16, 142, 233)">未评阅</td>
+							<td>
+								<div style="margin-left: 5px; width: 30px;float: left;">
+									<a href="">
+										<i class="fa fa-eye" title="查看"></i>
+									</a>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p class="msg" style="margin-top: 10px; margin-left: 20px;">
+				<span id="notdisplay" style="display: none;"></span>
+				<input type="submit" value="删除选中" class="delBtn" id="delBtn" disabled="disabled" onclick='return checkdel();'/>
+				共找到 9 条课程信息，每页显示10条记录
+			</p>
+			<div class="" style="text-align: center;margin-bottom:20px; ">
+			
+			</div>
+			</form>
+			<!-- 我的实验报告列表结束 -->
+		</div>
+	</div>
+	<!-- 我的实验报告结束 -->
+	
+	<footer>
+        <div class="footer-body">
+            <div class="footer">
+                <font class="footerText"><string>© 2018 DGUT All Rights Reserved</string></font>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+  		$("#submitedFilter").click(function(){
+  			$("#submitedFilterDiv").slideToggle();
+		});
+	});
+
+	$(document).ready(function(){
+  		$("#markedFilter").click(function(){
+  			$("#markedFilterDiv").slideToggle();
+		});
+	});
+</script>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>计算机学院实验报告在线撰写系统</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href="./css/login.css">
+    <link rel="stylesheet" href="./css/bootstrap-3.3.7/bootstrap4.1.0.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/index/login.css">
+    <link rel="stylesheet" type="text/css" href="./css/index/footer.css">
+    <script src="./js/bootstrap/jquery3.2.1.min.js"></script>
+    <script src="./js/bootstrap/popper.min.js"></script>
+
+    
+</head>
+
+
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark" style="background: rgb(50,50,50);">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">
+                    <!-- 设置margin-top,避免logo太大 -->
+                    <img  class="img-circle" alt="Brand" style="max-width:60px;margin-top:-10px;" src="./images/school.png">
+                </a>
+            </div>
+            <div class="navbar-collapse collapse" id="collapsibleNavbar">
+                <!-- Links -->
+                <ul class="nav navbar-nav nav-left">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首页</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{:url('index/index/login')}">
+                            <span class="glyphicon glyphicon-log-in"></span> 登录
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="container" id="login-container">
+        <div class="row center">
+            <div class="col-md-offset-3 col-md-12" style="margin:0 auto;">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="inputAccount" class="col-sm-6 control-label">账号</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="请输入用户名">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-sm-6 control-label">密码</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="请输入密码">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> 记住我
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">登录</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-body">
+            <div class="footer">
+                <font class="footerText"><string>© 2018 DGUT All Rights Reserved</string></font>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

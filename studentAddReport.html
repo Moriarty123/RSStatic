@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>计算机学院实验报告在线撰写系统</title>
+	<link rel="stylesheet" type="text/css" href="./css/common/common.css">
+</head>
+<style type="text/css">
+	.reportContainer {
+		width: 500px; margin-top: 10px; margin-left: 10px;
+	}
+
+	.title{
+		size: 10px; 
+	}
+</style>
+<body>
+	<div class="reportContainer">
+		<div>
+			<p><font size="5">实验目的</font></p>
+			<textarea style="margin-bottom: 20px; " id="aim-box">
+								
+			</textarea>
+		</div>
+		<div>
+			<p><font size="5">实验环境</font></p>
+			<textarea style="margin-bottom: 20px; " id="setting-box">
+								
+			</textarea>
+		</div>
+		<div>
+			<p><font size="5">实验任务</font></p>
+			<textarea style="margin-bottom: 20px; " id="task-box">
+								
+			</textarea>
+		</div>
+		
+		<div>
+			<p><font size="5">实验要求</font></p>
+			<textarea style="margin-bottom: 20px; " id="requirement-box">
+								
+			</textarea>
+		</div>
+		<div>
+			<p><font size="5">实验内容</font></p>
+			<textarea style="margin-bottom: 20px; " id="content-box">
+								
+			</textarea>
+		</div>
+		<div>
+			<p><font size="5">实验代码</font></p>
+			<textarea style="margin-bottom: 20px; " id="code-box">
+								
+			</textarea>
+		</div>
+		<div style="margin-bottom: 20px; height: 50px;">
+			<div style="float: left;">
+				<div class="ButtonDiv">
+		                <button class="Button">保存</button>
+		        </div>
+	        </div>
+	        <div style="float: left;">
+		        <div class="ButtonDiv">
+		                <button class="Button">提交</button>
+		        </div>
+	        </div>
+        </div>
+	</div>
+</body>
+</html>
+
+<!-- 配置文件 -->
+<script type="text/javascript" src="UEditor/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="UEditor/ueditor.all.js"></script>
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+	UE.getEditor('aim-box');
+	UE.getEditor('setting-box');
+	UE.getEditor('task-box');
+	UE.getEditor('requirement-box');
+	UE.getEditor('content-box');
+	UE.getEditor('code-box');
+</script>
