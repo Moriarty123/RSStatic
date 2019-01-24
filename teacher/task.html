@@ -66,35 +66,35 @@
 
 	<!-- 实验任务开始 -->
 	<div id="" class="task-container">
-		<div id="" class="task-padding" style="position: relative; top: 0px; left: 0px;">
-			<div class="task-title" style="margin-right: 0px;">
+		<div id="" class="task-padding">
+			<div class="task-title" >
 				<div style="float: left;">
 					<h3>实验任务</h3>
 				</div>
 			</div>
-			<div style="float: right;width: 170px; display: inline; position: absolute; top: 20px; right: 10px;">
-				<div class="ButtonDiv" style="text-align: center;">
+			<div class="task-title-right">
+				<div class="ButtonDiv">
 					<button class="Button" style="width: 130px;">
 						<i class="fas fa-plus" style="color: #7FFF00"></i>&nbsp;添加实验任务
 					</button>
 				</div>
 			</div>
 			
-			<div style="margin-top: 20px; margin-left: 30px; width: 100%;" class="course-select">
-				<label style="border:1px solid #108ee9; line-height: 28px; margin: 0px; padding: 0px;">
+			<div class="course-select">
+				<label>
 					<span style="padding:5px;"><a href="">无线传感器网络与物联网通信技术</a></span>
 				</label>
-				<label style="border:1px solid #108ee9; line-height: 28px; margin: 0px;">
+				<label>
 					<span><a href="">计算机网络</a></span>
 				</label>
-				<label style="border:1px solid #108ee9; line-height: 28px; margin: 0px;">
+				<label>
 					<span><a href="">...</a></span>
 				</label>
 				
-				<div style="width: 500px; height: 30px; float: right;border: 1px solid #C0C0C0; margin-right: 60px;">
+				<div class="selectDiv">
 					<form>
-						<input type="text" placeholder="请输入课程" style="width: 398px; height: 30px; padding-left: 10px;: ">
-						<button style="width: 100px; height: 30px; float: right;">搜索</button>
+						<input type="text" placeholder="请输入课程" class="selectInput">
+						<button class="selectButton">搜索</button>
 					</form>
 				</div>
 			</div>
@@ -116,16 +116,16 @@
 							<th>实验报告</th>
 							<th style="position: relative; top:0px; left:0px;">
 								发布状态
-								<span id="submitedFilter">
+								<span id="publishedFilter">
 									<i class="fa fa-filter" title="筛选"></i>
 								</span>
-								<div id="submitedFilterDiv" class="submitedFilterDiv" >
+								<div id="publishedFilterDiv" class="publishedFilterDiv" >
 									<form >
-										<div class="submitedFilterRadio">	
-											<label><input name="submited" type="radio"/>未发布</label>
+										<div class="publishedFilterRadio">	
+											<label><input name="published" type="radio"/>未发布</label>
 										</div>
-										<div class="submitedFilterRadio">
-											<label><input name="submited" type="radio"/>已发布</label>
+										<div class="publishedFilterRadio">
+											<label><input name="published" type="radio"/>已发布</label>
 										</div>
 										
 										<!-- <a href="" style="float: left; margin-left: 5px; ">确认</a>
@@ -357,8 +357,8 @@
 <script type="text/javascript">
 	
 	$(document).ready(function(){
-  		$("#submitedFilter").click(function(){
-  			$("#submitedFilterDiv").slideToggle();
+  		$("#publishedFilter").click(function(){
+  			$("#publishedFilterDiv").slideToggle();
 		});
 	});
 
