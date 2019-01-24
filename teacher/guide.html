@@ -57,9 +57,8 @@
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">首页</a></li>
                         <li><a href="course.html">实验课程</a></li>
-                        <li><a href="task.html">实验任务</a></li>
+                        <li><a href="guide.html">实验任务</a></li>
                         <li><a href="guide.html">实验指导</a></li>
-                        <li><a href="publishTask.html">发布实验任务</a></li>
                         <li><a href="#">批阅实验报告</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">统计 <span class="caret"></span></a>
@@ -80,38 +79,49 @@
     </header>
 
 	<!-- 我的成绩开始 -->
-	<div id="" class="score-container">
-		<div id="" class="score-padding">
-			<div class="score-title">
-				<h3>实验指导</h3>
+	<div id="" class="guide-container">
+		<div id="" class="guide-padding">
+			<div class="guide-title" >
+				<div style="float: left;">
+					<h3>实验指导</h3>
+				</div>
 			</div>
-			<div style="margin-top: 20px; margin-left: 30px; width: 100%;" class="course-select">
-				<label style="border:1px solid #108ee9; line-height: 28px; margin: 0px; padding: 0px;">
+			<div class="guide-title-right">
+				<div class="ButtonDiv">
+					<button class="Button" style="width: 130px;">
+						<i class="fas fa-plus" style="color: #7FFF00"></i>&nbsp;添加实验指导
+					</button>
+				</div>
+			</div>
+			
+			<div class="course-select">
+				<label>
 					<span style="padding:5px;"><a href="">无线传感器网络与物联网通信技术</a></span>
 				</label>
-				<label style="border:1px solid #108ee9; line-height: 28px; margin: 0px;">
+				<label>
 					<span><a href="">计算机网络</a></span>
 				</label>
-				<label style="border:1px solid #108ee9; line-height: 28px; margin: 0px;">
+				<label>
 					<span><a href="">...</a></span>
 				</label>
-				<div style="width: 500px; height: 30px; float: right;border: 1px solid #C0C0C0; margin-right: 60px;">
+				
+				<div class="selectDiv">
 					<form>
-						<input type="text" placeholder="请输入课程" style="width: 398px; height: 30px; padding-left: 10px;: ">
-						<button style="width: 100px; height: 30px; float: right;">搜索</button>
+						<input type="text" placeholder="请输入课程" class="selectInput">
+						<button class="selectButton">搜索</button>
 					</form>
 				</div>
 			</div>
 			<div style="clear: both;"></div>
-			<div class="score-msg">
+			<div class="guide-msg">
 				<i class="fa fa-info-circle"></i>
 				<span style="margin-left: 5px;">共搜索到 9 条数据</span>
 			</div>
 
 			<!-- 我的成绩列表开始 -->
-			<div class="scoreDiv" style=""> 
+			<div class="guideDiv" style=""> 
 				<form>
-				<table class="scoreTable" style="width: 100%; ">
+				<table class="guideTable" style="width: 100%; ">
 					<thead>
 						<tr>
 							<th style="width: 30px;"><input type="checkbox" name="fullChoose" onclick="fullChecked(this)" /></th>

@@ -27,51 +27,88 @@ a:hover {
 	text-decoration: none;
 }
 
-.score-container {
+/*课程选择开始*/
+.course-select {
+	margin-top: 20px; margin-left: 30px; width: 100%;
+}
+.course-select label {
+	border:1px solid #108ee9; line-height: 28px; margin: 0px; padding: 0px;
+}
+
+.course-select ul li {
+	list-style: none;
+	float: left;
+}
+/*课程选择结束*/
+
+/*搜索框开始*/
+.selectDiv {
+	width: 500px; height: 30px; float: right;border: 1px solid #C0C0C0; margin-right: 60px;
+}
+
+.selectInput {
+	width: 398px; height: 30px; padding-left: 10px;
+}
+.selectButton {
+	width: 100px; height: 30px; float: right;
+}
+/*搜索框结束*/
+
+
+
+.guide-container {
 	width: 90%; height: 900px; padding: 10px; margin:20px 5%; background: #f4f4f4;
 }
 
-.score-padding {
-	width: 100%; height: 100%; background: #FFF;  
+.guide-padding {
+	width: 100%; height: 100%; background: #FFF; position: relative; top: 0px; left: 0px; 
 }
 
-.score-title {
+.guide-title {
 	margin-left: 30px; padding-top: 10px; width: 150px;  height:70px; line-height:50px; padding-bottom:10px;  border-bottom: 2px blue solid;
 }
 
-.score-msg {
+.guide-title-left {
+
+}
+
+.guide-title-right {
+	float: right;width: 170px; display: inline; position: absolute; top: 20px; right: 10px;
+}
+
+.guide-msg {
 	width: 95%; height: 30px; line-height: 30px; margin-left:30px; margin-top:30px; background:#ecf6fd; border-radius: 5px; padding-left: 10px;
 }
 
 
-.scoreDiv {
+.guideDiv {
 	width: 95%; margin-left:30px; margin-top:20px;
 	
 }
-.scoreTable {
+.guideTable {
 	height: 600px;
 	overflow: hidden;
 }
 
-.scoreTable thead {
+.guideTable thead {
 	background: #F7F7F7; padding:10px; margin:10px; height:50px; line-height: 50px;
 	overflow: hidden;
 }
 
-.scoreTable thead th {
+.guideTable thead th {
 	padding-left:10px;
 	padding-right:10px;
 }
 
-.scoreTable tbody {
+.guideTable tbody {
 	background:#FFF; height:50px; line-height:50px;
 }
 
-.scoreTable tbody tr {
+.guideTable tbody tr {
 	border-bottom: 1px solid #F0F0F0;
 }
 
-.scoreTable tbody td {
+.guideTable tbody td {
 	padding-left:10px;
 	padding-right:10px;
 }
