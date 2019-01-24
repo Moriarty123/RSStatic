@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../css/index/footer.css">
     <link rel="stylesheet" type="text/css" href="../css/navbar.css">
     <link rel="stylesheet" type="text/css" href="../css/teacher/course.css">
+    <link rel="stylesheet" type="text/css" href="../css/common/common.css">
     <script src="../js/bootstrap/jquery3.2.1.min.js"></script>
     <script src="../js/bootstrap/popper.min.js"></script>
     <script src="../js/bootstrap/bootstrap3.3.7.min.js"></script>
@@ -39,9 +40,10 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="color: #FFF; ">
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">首页</a></li>
-                        <li><a href="#">实验课程</a></li>
-                        <li><a href="#">实验指导</a></li>
-                        <li><a href="#">发布实验任务</a></li>
+                        <li><a href="course.html">实验课程</a></li>
+                        <li><a href="task.html">实验任务</a></li>
+                        <li><a href="guide.html">实验指导</a></li>
+                        <li><a href="publishTask.html">发布实验任务</a></li>
                         <li><a href="#">批阅实验报告</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">统计 <span class="caret"></span></a>
@@ -62,10 +64,53 @@
     </header>
 
 	<!-- 发布实验任务开始 -->
-	<div id="" class="course-container" style="height: 800px;">
+	<div id="" class="course-container" style="height: 600px;">
 		<div id="" class="course-padding" style="padding-bottom: 10px;">
 			<div class="course-title">
-				<h3>实验课程</h3>
+				<h3>发布实验任务</h3>
+			</div>
+			<div style="height: 400px; margin-left: 20px;margin-top: 20px;">
+				<form>
+                    <div style="margin-top: 20px; margin-left: 20px">
+    					<h4>实验任务名称：</h4>
+                        <div style="width: 200px;">
+                            <input type="text" name="" placeholder="请输入实验任务名称" style="width: 100%;">
+                        </div>
+					</div>
+                    <div style="margin-top: 20px; margin-left: 20px">
+                        <h4>所属课程</h4>
+                        <div style="width: 200px;">
+                            <select style="width: 100%;">
+                                <option>--请选择所属课程--</option>
+                                <option>无线传感器网络与物联网通信技术</option>
+                                <option>计算机网络</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div style="margin-top: 20px; margin-left: 20px">
+                        <h4>实验指导</h4>
+                        <div style="width: 200px;">
+                            <select style="width: 100%;">
+                                <option>--请选择实验指导--</option>
+                                <option>实验1  分组嗅探器的使用和网络协议的层次观察</option>
+                                <option>实验二 UHF900M识别多个标签实验</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 20px; height: 50px;">
+                        <div style="float: left;">
+                            <div class="ButtonDiv">
+                                    <button class="Button">保存</button>
+                            </div>
+                        </div>
+                        <div style="float: left;">
+                            <div class="ButtonDiv">
+                                    <button class="Button">提交</button>
+                            </div>
+                        </div>
+                    </div>
+				</form>
 			</div>
 		</div>
 	</div>

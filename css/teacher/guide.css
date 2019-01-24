@@ -3,10 +3,6 @@
 	padding: 0px;
 }
 
-body {
-	background: #f4f4f4;
-}
-
 i {
 	color: #0EC1DE;
 }
@@ -31,56 +27,51 @@ a:hover {
 	text-decoration: none;
 }
 
-.course-select ul li {
-	list-style: none;
-	float: left;
-}
-
-.task-container {
+.score-container {
 	width: 90%; height: 900px; padding: 10px; margin:20px 5%; background: #f4f4f4;
 }
 
-.task-padding {
+.score-padding {
 	width: 100%; height: 100%; background: #FFF;  
 }
 
-.task-title {
+.score-title {
 	margin-left: 30px; padding-top: 10px; width: 150px;  height:70px; line-height:50px; padding-bottom:10px;  border-bottom: 2px blue solid;
 }
 
-.task-msg {
+.score-msg {
 	width: 95%; height: 30px; line-height: 30px; margin-left:30px; margin-top:30px; background:#ecf6fd; border-radius: 5px; padding-left: 10px;
 }
 
 
-.taskDiv {
+.scoreDiv {
 	width: 95%; margin-left:30px; margin-top:20px;
 	
 }
-.taskTable {
+.scoreTable {
 	height: 600px;
 	overflow: hidden;
 }
 
-.taskTable thead {
+.scoreTable thead {
 	background: #F7F7F7; padding:10px; margin:10px; height:50px; line-height: 50px;
 	overflow: hidden;
 }
 
-.taskTable thead th {
+.scoreTable thead th {
 	padding-left:10px;
 	padding-right:10px;
 }
 
-.taskTable tbody {
+.scoreTable tbody {
 	background:#FFF; height:50px; line-height:50px;
 }
 
-.taskTable tbody tr {
+.scoreTable tbody tr {
 	border-bottom: 1px solid #F0F0F0;
 }
 
-.taskTable tbody td {
+.scoreTable tbody td {
 	padding-left:10px;
 	padding-right:10px;
 }
