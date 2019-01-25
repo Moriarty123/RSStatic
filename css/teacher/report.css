@@ -5,6 +5,7 @@
 
 body {
 	background: #f4f4f4;
+	font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu
 }
 
 i {
@@ -23,17 +24,17 @@ td{
     text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
 }
 
+ul li {
+	list-style: none;
+	float: left;
+}
+
 a {
 	text-decoration: none;
 }
 
 a:hover {
 	text-decoration: none;
-}
-
-ul li {
-	list-style: none;
-	float: left;
 }
 
 /*课程选择开始*/
@@ -63,65 +64,117 @@ ul li {
 }
 /*搜索框结束*/
 
-/*实验任务开始*/
-.task-container {
-	width: 90%; height: 900px; padding: 10px; margin:20px 5%; background: #f4f4f4;
+/*筛选框开始*/
+.filterDiv {
+	width: 95%; height: 250px;  margin-left: 30px; margin-top: 20px; border:1px solid #CCC;
+	position: relative; top: 0px; left: 0px;
+	background: #FFF;
+}
+.filterDiv ul li {
+	 height: 30px; margin-left: 70px; color: blue; font-size: 20px; text-align: center;
+}
+.filterDiv .gradeFilter {
+	width:1000px; position: absolute; top: 40px; left: 30px;
 }
 
-.task-padding {
+.filterDiv .classFilter {
+	width:1000px; position: absolute; top: 80px; left: 30px;
+}
+
+.filterDiv .sexFilter {
+	width:1000px; position: absolute; top: 120px; left: 30px;
+}
+
+.filterDiv .courseFilter {
+	width:1000px; position: absolute; top: 160px; left: 30px;
+}
+
+.filterDiv .statusFilter {
+	width:1000px; position: absolute; top: 200px; left: 30px;
+}
+
+.filterDiv span {
+	float: left;width: 100px; height: 30px; font-size: 20px; text-align: center;
+}
+
+.filterDiv .courseFilter ul li {
+	 overflow: hidden;
+}
+
+.isFilter {
+	width: 100px; height: 40px; line-height: 40px; text-align: center;
+	/*position: absolute; top: 140px; right: 30px; */
+	margin-top: 10px; margin-right: 30px;float: right;
+	background: #CCC;
+}
+
+.filterDiv .isFilter2 {
+	width: 100px; height: 40px; line-height: 40px; text-align: center;
+	position: absolute; top: 0px; right: 0px; 
+	/*margin-top: 10px; margin-right: 30px;float: right;*/
+	background: #CCC;
+}
+/*筛选框结束*/
+
+/*批阅实验报告开始*/
+.report-container {
+	width: 90%; height: 1200px; padding: 10px; margin:20px 5%; background: #f4f4f4;
+}
+
+.report-padding {
 	width: 100%; height: 100%; background: #FFF; position: relative; top: 0px; left: 0px; 
 }
 
-.task-title {
+.report-title {
 	margin-left: 30px; padding-top: 10px; width: 150px;  height:70px; line-height:50px; padding-bottom:10px;  border-bottom: 2px blue solid;
 }
 
-.task-title-left {
+.report-title-left {
 
 }
 
-.task-title-right {
+.report-title-right {
 	float: right;width: 170px; display: inline; position: absolute; top: 20px; right: 10px;
 }
 
-.task-msg {
-	width: 95%; height: 30px; line-height: 30px; margin-left:30px; margin-top:30px; background:#ecf6fd; border-radius: 5px; padding-left: 10px;
+.report-msg {
+	width: 95%; height: 30px; line-height: 30px; margin-left:30px; margin-top:10px; background:#ecf6fd; border-radius: 5px; padding-left: 10px;
 }
 
 
-.taskDiv {
+.reportDiv {
 	width: 95%; margin-left:30px; margin-top:20px;
 	
 }
-.taskTable {
+.reportTable {
 	height: 600px;
 	overflow: hidden;
 }
 
-.taskTable thead {
+.reportTable thead {
 	background: #F7F7F7; padding:10px; margin:10px; height:50px; line-height: 50px;
 	overflow: hidden;
 }
 
-.taskTable thead th {
+.reportTable thead th {
 	padding-left:10px;
 	padding-right:10px;
 }
 
-.taskTable tbody {
+.reportTable tbody {
 	background:#FFF; height:50px; line-height:50px;
 }
 
-.taskTable tbody tr {
+.reportTable tbody tr {
 	border-bottom: 1px solid #F0F0F0;
 }
 
-.taskTable tbody td {
+.reportTable tbody td {
 	padding-left:10px;
 	padding-right:10px;
 }
 
-/*实验任务结束*/
+/*批阅实验报告结束*/
 
 
 
