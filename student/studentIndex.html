@@ -5,25 +5,28 @@
     <title>计算机学院实验报告在线撰写系统</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/bootstrap-3.3.7/bootstrap4.1.0.min.css">
+    <!-- <link rel="stylesheet" href="./css/bootstrap-3.3.7/bootstrap4.1.0.min.css"> -->
     <link rel="stylesheet" href="./css/bootstrap-3.3.7/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./css/index/footer.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./css/student/index.css"> -->
     <link rel="stylesheet" type="text/css" href="./css/navbar.css">
     <script src="./js/bootstrap/jquery3.2.1.min.js"></script>
     <script src="./js/bootstrap/popper.min.js"></script>
-
+    <script src="./js/bootstrap/bootstrap3.3.7.min.js"></script>
     
 </head>
 
+<style type="text/css">
 
+</style>
 
 <body>
 
     <header>
         <nav class="navbar navbar-default" >
-            <div class="container-fluid" style="position: relative; top: 0px; left: 0px; ">
+            <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header" style="float: left; position: absolute; top: -7px; left: 3px;">
+                <div class="navbar-header">
                     <a class="navbar-brand" href="index.html">
                         <!-- 设置margin-top,避免logo太大 -->
                         <img  class="img-circle" alt="Brand" style="max-width:90px;margin-top:-7px;" src="./images/school.png">
@@ -32,15 +35,29 @@
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="color: #FFF; ">
-                    
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="studentCourse.html">我的实验课程</a></li>
+                        <li><a href="studentTask.html">我的实验任务</a></li>
+                        <li><a href="studentReport.html">我的实验报告</a></li>
+                        <li><a href="studentScore.html">我的成绩</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">统计 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li style="width: 150px; "><a href="#">成绩统计</a></li>
+                                <li ><a href="#">学生统计</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="login.html">请登录</a></li>
+                        <li>欢迎你，<a href="#" style="display: inline-block;">tyt</a></li>
+                        <li><a href="#">退出</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
     </header>
-
 
     <div class="container" style="margin-top: 50px; height: 500px;">
         <div class="jumbotron">

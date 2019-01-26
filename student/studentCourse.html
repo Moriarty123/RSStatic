@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>计算机学院实验报告在线撰写系统</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" href="./css/bootstrap-3.3.7/bootstrap4.1.0.min.css"> -->
+	<link rel="icon" href="./images/school.ico" type="images/x-icon"/>
+	<link rel="stylesheet" href="./css/bootstrap-3.3.7/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/index/footer.css">
+	<!-- <link rel="stylesheet" type="text/css" href="./css/student/index.css"> -->
+	<link rel="stylesheet" type="text/css" href="./css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="./css/student/course.css">
+	<link rel="stylesheet" type="text/css" href="./fontawesome-5.5.0/css/all.css" />
+
+	<script src="./js/bootstrap/jquery3.2.1.min.js"></script>
+	<script src="./js/bootstrap/popper.min.js"></script>
+	<script src="./js/bootstrap/bootstrap3.3.7.min.js"></script>
+
+</head>
+
+<style type="text/css">
+	* {
+		margin: 0px; 
+		padding: 0px;
+	}
+
+	body {
+		background: #f4f4f4;
+	}
+</style>
+
+<body>
+
+
+	<header>
+		<nav class="navbar navbar-default" >
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html">
+						<!-- 设置margin-top,避免logo太大 -->
+						<img  class="img-circle" alt="Brand" style="max-width:90px;margin-top:-7px;" src="./images/school.png">
+					</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="color: #FFF; ">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="studentCourse.html">我的实验课程</a></li>
+						<li><a href="studentTask.html">我的实验任务</a></li>
+						<li><a href="studentReport.html">我的实验报告</a></li>
+						<li><a href="studentScore.html">我的成绩</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">统计 <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li style="width: 150px; "><a href="#">成绩统计</a></li>
+								<li ><a href="#">学生统计</a></li>
+							</ul>
+						</li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li>欢迎你，<a href="#" style="display: inline-block;">tyt</a></li>
+						<li><a href="#">退出</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+	</header>
+
+	<!-- 我的课程开始 -->
+	<div id="" class="course-container">
+		<div id="" class="course-padding">
+			<div class="course-title">
+				<h3>我的实验课程</h3>
+			</div>
+			<div class="course-msg">
+				<i class="fa fa-info-circle"></i>
+				<span style="margin-left: 5px;">共搜索到 9 条数据</span>
+			</div>
+
+			<!-- 我的课程列表开始 -->
+			<div class="courseDiv" style=""> 
+				<form>
+				<table class="courseTable" style="width: 100%; ">
+					<thead>
+						<tr>
+							<th style="width: 30px;"><input type="checkbox" name="fullChoose" onclick="fullChecked(this)" /></th>
+							<th>课程编号</th>
+							<th style="width: 160px;">课程名称</th>
+							<th>任课老师</th>
+							<th style="width: 160px;">任课班级</th>
+							<th style="position: relative; top:0px; left:0px;">
+								任课时间
+								<span id="termFilter">
+									<i class="fa fa-filter" title="筛选"></i>
+								</span>
+								<div id="termFilterDiv" class="termFilterDiv" >
+									<form >
+										<div class="termFilterRadio">	
+											<label><input name="term" type="radio"/>本学期</label>
+										</div>
+										<div class="termFilterRadio">
+											<label><input name="term" type="radio"/>之前学期</label>
+										</div>
+										
+										<!-- <a href="" style="float: left; margin-left: 5px; ">确认</a>
+										<a href="" style="float: right; margin-right: 5px;">重置</a> -->
+										<!-- <hr style="border:1px solid #F0F0F0; "> -->
+										<div>
+											<input type="submit" name="" class="submit">
+											<input type="reset" name="" class="reset">
+										</div>
+									</form>
+								</div>
+							</th>
+							<th>
+								课程类型
+							</th>
+							<th>实验课时</th>
+							<th>考查方式</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td style="width: 30px;"><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$vo.user_id}"/></td>
+							<td>043977</td>
+							<td>无线传感器网络与物联网通信技术</td>
+							<td>陶铭</td>
+							<td>2015计算机科学与技术1、2、3、4班</td>
+							<td>2018春季学期</td>
+							<td>选修课</td>
+							<td>56</td>
+							<td>考查</td>
+							<td>
+								<a href="">
+								<i class="fa fa-eye" title="查看实验"></i>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$vo.user_id}"/></td>
+							<td>048401</td>
+							<td>计算机网络</td>
+							<td>陶铭</td>
+							<td>2015软件工程1、2、3班</td>
+							<td>2018春季学期</td>
+							<td>必修课</td>
+							<td>48</td>
+							<td>考试</td>
+							<td>
+								<a href="">
+								<i class="fa fa-eye" title="查看实验"></i>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$vo.user_id}"/></td>
+							<td>043977</td>
+							<td>无线传感器网络与物联网通信技术</td>
+							<td>陶铭</td>
+							<td>2015计算机科学与技术1、2、3、4班</td>
+							<td>2018春季学期</td>
+							<td>选修课</td>
+							<td>56</td>
+							<td>考查</td>
+							<td>
+								<a href="">
+								<i class="fa fa-eye" title="查看实验"></i>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$vo.user_id}"/></td>
+							<td>048401</td>
+							<td>计算机网络</td>
+							<td>陶铭</td>
+							<td>2015软件工程1、2、3班</td>
+							<td>2018春季学期</td>
+							<td>必修课</td>
+							<td>48</td>
+							<td>考试</td>
+							<td>
+								<a href="">
+								<i class="fa fa-eye" title="查看实验"></i>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$vo.user_id}"/></td>
+							<td>043977</td>
+							<td>无线传感器网络与物联网通信技术</td>
+							<td>陶铭</td>
+							<td>2015计算机科学与技术1、2、3、4班</td>
+							<td>2018春季学期</td>
+							<td>选修课</td>
+							<td>56</td>
+							<td>考查</td>
+							<td>
+								<a href="">
+								<i class="fa fa-eye" title="查看实验"></i>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$vo.user_id}"/></td>
+							<td>048401</td>
+							<td>计算机网络</td>
+							<td>陶铭</td>
+							<td>2015软件工程1、2、3班</td>
+							<td>2018春季学期</td>
+							<td>必修课</td>
+							<td>48</td>
+							<td>考试</td>
+							<td>
+								<a href="">
+								<i class="fa fa-eye" title="查看实验"></i>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$vo.user_id}"/></td>
+							<td>043977</td>
+							<td>无线传感器网络与物联网通信技术</td>
+							<td>陶铭</td>
+							<td>2015计算机科学与技术1、2、3、4班</td>
+							<td>2018春季学期</td>
+							<td>选修课</td>
+							<td>56</td>
+							<td>考查</td>
+							<td>
+								<a href="">
+								<i class="fa fa-eye" title="查看实验"></i>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$vo.user_id}"/></td>
+							<td>048401</td>
+							<td>计算机网络</td>
+							<td>陶铭</td>
+							<td>2015软件工程1、2、3班</td>
+							<td>2018春季学期</td>
+							<td>必修课</td>
+							<td>48</td>
+							<td>考试</td>
+							<td>
+								<a href="">
+								<i class="fa fa-eye" title="查看实验"></i>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$vo.user_id}"/></td>
+							<td>043977</td>
+							<td>无线传感器网络与物联网通信技术</td>
+							<td>陶铭</td>
+							<td>2015计算机科学与技术1、2、3、4班</td>
+							<td>2018春季学期</td>
+							<td>选修课</td>
+							<td>56</td>
+							<td>考查</td>
+							<td>
+								<a href="">
+								<i class="fa fa-eye" title="查看实验"></i>
+								</a>
+							</td>
+						</tr>
+						
+					</tbody>
+				</table>
+			</div>
+			<p class="msg" style="margin-top: 10px; margin-left: 20px;">
+				<span id="notdisplay" style="display: none;"></span>
+				<input type="submit" value="删除选中" class="delBtn" id="delBtn" disabled="disabled" onclick='return checkdel();'/>
+				共找到 9 条课程信息，每页显示10条记录
+			</p>
+			<div class="" style="text-align: center;margin-bottom:20px; ">
+			
+			</div>
+			</form>
+			<!-- 我的课程列表结束 -->
+		</div>
+	</div>
+	<!-- 我的课程结束 -->
+	
+	<footer>
+        <div class="footer-body">
+            <div class="footer">
+                <font class="footerText"><string>© 2018 DGUT All Rights Reserved</string></font>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+  		$("#termFilter").click(function(){
+  			$("#termFilterDiv").slideToggle();
+		});
+	});
+</script>
