@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>计算机学院实验报告在线撰写系统</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="../css/bootstrap-3.3.7/bootstrap4.1.0.min.css"> -->
+    <link rel="icon" href="../images/school.ico" type="images/x-icon"/>
+    <link rel="stylesheet" href="../css/bootstrap-3.3.7/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/index/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/common/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/teacher/review.css">
+    <link rel="stylesheet" type="text/css" href="../fontawesome-5.5.0/css/all.css" />
+
+    <script src="../js/bootstrap/jquery3.2.1.min.js"></script>
+    <script src="../js/bootstrap/popper.min.js"></script>
+    <script src="../js/bootstrap/bootstrap3.3.7.min.js"></script>
+
+</head>
+
+<style type="text/css">
+    * {
+        margin: 0px; 
+        padding: 0px;
+    }
+
+    body {
+        background: #f4f4f4;
+    }
+</style>
+
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-default" >
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- 设置margin-top,避免logo太大 -->
+                        <img  class="img-circle" alt="Brand" style="max-width:90px;margin-top:-7px;" src="../images/school.png">
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="color: #FFF; ">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="course.html">实验课程</a></li>
+                        <li><a href="task.html">实验任务</a></li>
+                        <li><a href="guide.html">实验指导</a></li>
+                        <li><a href="reportReview.html">批阅实验报告</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">统计 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li style="width: 150px; "><a href="#">成绩统计</a></li>
+                                <li ><a href="#">学生统计</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>欢迎你，<a href="#" style="display: inline-block;">tyt</a></li>
+                        <li><a href="#">退出</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </header>
+
+    <!-- 实验指导开始 -->
+    <div id="" class="task-container">
+        <div id="" class="task-padding">
+            <div class="task-title">
+                <h3>批阅实验报告</h3>
+            </div>
+            <div style="margin-left:20px; margin-top: 10px; ">
+                <iframe src="../files/201541402313-涂奕钿-实验1.pdf" style="width: 550px; height: 600px; "></iframe>
+                <iframe src="addReview.html" style="width: 550px; height: 600px; "></iframe>
+            </div>
+            <div class="ButtonDiv">
+                <button class="Button">返回</button>
+            </div>
+        </div>
+    </div>
+    <!-- 实验指导结束 -->
+    
+    <footer>
+        <div class="footer-body">
+            <div class="footer">
+                <font class="footerText"><string>© 2018 DGUT All Rights Reserved</string></font>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    
+    $(document).ready(function(){
+        $("#stateFilter").click(function(){
+            $("#stateFilterDiv").slideToggle();
+        });
+    });
+</script>
