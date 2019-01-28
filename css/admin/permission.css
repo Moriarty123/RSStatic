@@ -1,0 +1,26 @@
+.permissionDiv {
+	margin-left: 30px; margin-top: 20px;
+}
+.permissionTable {
+	border: 1px solid #CCC; width: 1000px; text-align: center;
+}
+
+.permissionTable thead {
+	padding: 10px;
+}
+
+.permissionTable thead tr {
+	height: 30px;
+}
+.permissionTable thead th {
+	font-size: 16px;
+}
+
+
+.permissionTable td {
+	border-top: 1px solid #CCC;
+}
+
+.permissionTable .ButtonTd {
+	margin-left: 60px; margin-bottom: 10px;
+}
