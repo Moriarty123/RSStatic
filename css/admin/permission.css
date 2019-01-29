@@ -1,0 +1,41 @@
+.permissionTitleDiv {
+	float: left; font-size:12px; background: white; margin: 10px 15px 75px 20px;width: 1092px; height: 600px;
+}
+
+.permission-title {
+	margin-left: 30px; width: 150px;  height:55px; line-height:50px; padding-top:10px;  border-bottom: 2px blue solid; text-align: center; float: left;
+}
+
+.permission-title p {
+	height: 50px; line-height: 50px; font-size: 30px;
+}
+
+.permission-title-right {
+	float: right; margin-right: 90px; margin-top: 20px;
+}
+
+.permissionDiv {
+	margin-left: 30px; margin-top: 20px;
+}
+.permissionTable {
+	border: 1px solid #CCC; width: 1000px; text-align: center;
+}
+
+.permissionTable thead {
+	padding: 10px;
+}
+
+.permissionTable thead tr {
+	height: 30px;
+}
+.permissionTable thead th {
+	font-size: 20px;
+}
+
+.permissionTable td {
+	border-top: 1px solid #CCC;
+}
+
+.permissionTable .ButtonTd {
+	margin-left: 60px; margin-bottom: 10px;
+}
