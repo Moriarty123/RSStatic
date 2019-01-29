@@ -66,3 +66,11 @@
     text-indent: 0.2em;
     border: 1px solid #a9a9a9; 
 }
+
+.add_checkbox {
+    width: 25px;
+    height: 15px;
+    outline: none;
+    text-indent: 0.2em;
+    border: 1px solid #a9a9a9; 
+}

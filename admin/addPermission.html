@@ -2,13 +2,13 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>计算机学院实验报告在线撰写系统</title>
+	<title>计算机学院实验报告在线撰写系统后台管理首页</title>
 	<link rel="shortcut icon" href="../images/school.ico" />
 	<link rel="stylesheet" href="../css/admin/index.css" />
 	<link rel="stylesheet" href="../css/admin/user.css" />
 	<link rel="stylesheet" href="../css/admin/common.css" />
-	<link rel="stylesheet" href="../css/admin/permission.css">
-	<link rel="stylesheet" href="../css/common/common.css">
+	<link rel="stylesheet" href="../css/admin/add.css" />
+	<link rel="stylesheet" href="../css/common/common.css" />
 	<link rel="stylesheet" href="../fontawesome-5.5.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="../fontawesome-5.5.0/css/all.css" />
 	<link rel="stylesheet" type="text/css" href="../css/admin/think-page.css">
@@ -18,34 +18,34 @@
 </head>
 <body>
 	<!-- 头部 -->
-	<div class="head">
-		<div class="headL">
-			<img class="headLogo" src="../images/school.png" style="width: 100px; float: left;"/>
-			<div class="titleDiv">
-				<!-- <p style="font-size: 24px;font-weight: bold;">东莞理工学院</p> -->
-				<p class="title">计算机学院实验报告在线撰写系统</p>
-			</div>
-		</div>
-		<div class="headR">
-			<span style="margin-bottom: 8px;display: inline-block;">
-				<!-- 日历 -->
-				<SCRIPT type=text/javascript src="../js/back/clock.js"></SCRIPT>
-				<SCRIPT type=text/javascript>showcal();</SCRIPT>
-			</span>
-			<br />
-			<div class="head_op">
-
-				<a href="/admin/login/index" >【登录】</a>
-
-				<span>欢迎你，</span>
-				<a href="" >【201541402313】</a>
-				<a href="/admin/login/logout" >【安全退出】</a>
-
-				<a href="/index/index/index">【回到前台】</a>
-			</div>
-		</div>
-	</div>
-	<!-- 头部结束 -->
+    <div class="head">
+        <div class="headL">
+            <img class="headLogo" src="../images/school.png" style="width: 100px; float: left;"/>
+            <div class="titleDiv">
+                <!-- <p style="font-size: 24px;font-weight: bold;">东莞理工学院</p> -->
+                <p class="title">计算机学院实验报告在线撰写系统</p>
+            </div>
+        </div>
+        <div class="headR">
+            <span style="margin-bottom: 8px;display: inline-block;">
+                <!-- 日历 -->
+                <SCRIPT type=text/javascript src="../js/back/clock.js"></SCRIPT>
+                <SCRIPT type=text/javascript>showcal();</SCRIPT>
+            </span>
+            <br />
+            <div class="head_op">
+                
+                <a href="/admin/login/index" >【登录】</a>
+                
+                <span>欢迎你，</span>
+                <a href="" >【201541402313】</a>
+                <a href="/admin/login/logout" >【安全退出】</a>
+               
+                <a href="/index/index/index">【回到前台】</a>
+            </div>
+        </div>
+    </div>
+    <!-- 头部结束 -->
 
 	<!-- 左边节点 -->
 	<div class="container" style="margin-top:20px;">
@@ -136,72 +136,55 @@
 	</div>
 	<!--左边结点结束-->
 
-	<!--用户权限开始-->
-	<div class="permissionTitleDiv">
-		<div class="permission-title">
-			<p>用户权限</p>
-		</div>
-		<div class="permission-title-right">
-			<div class="ButtonDiv">
-				<button class="Button" style="width: 130px;">
-					<a href="addPermission.html"><i class="fas fa-plus" style="color: #7FFF00"></i>&nbsp;添加角色</a>
-				</button>
+	<!--添加教师开始-->
+	<div id="MainForm">
+		<div class="form_boxA">
+			<div class="a">
+				<h2>添加新角色</h2>
+			</div>
+
+			<div class="add_div">
+				<form action="" method="post" class="add_form">
+					<div style="margin:5px; " class="add_list">
+						<label class="add_label">
+							<span class="xing">*</span>
+							<strong>权限号：</strong>
+						</label>
+						<input type="text" name="" placeholder="请输入专业号" class="add_input">
+					</div>
+					<div style="margin:5px; " class="add_list">
+						<label class="add_label">
+							<span class="xing">*</span>
+							<strong>角色名称：</strong>
+						</label>
+						<input type="text" name="" placeholder="请输入专业名称" class="add_input">
+					</div>
+					<div style="margin:5px; " class="add_list">
+						<label class="add_label">
+							<span class="xing">*</span>
+							<strong>角色描述：</strong>
+						</label>
+						<textarea class="add_textarea">
+							
+						</textarea>
+					</div>
+					<div style="margin:5px; width: 460px; margin-top:20px;" class="add_list">
+						<label class="add_label">
+							<span class="xing">*</span>
+							<strong>权限：</strong>
+						</label>
+						<label><input type="checkbox" name="" value="" class="add_checkbox">普通教师权限</label>
+						<label><input type="checkbox" name="" value="" class="add_checkbox">普通学生权限</label>
+						<label><input type="checkbox" name="" value="" class="add_checkbox">普通管理员权限</label>
+					</div>
+					<div class="ButtonDiv">
+						<input type="submit" name="" class="Button add_submit">
+					</div>
+				</form>
 			</div>
 		</div>
-		<div style="clear: both;"></div>
-		<div class="permissionDiv">
-			<table class="permissionTable" style="border: 1px solid">
-				<thead>
-					<tr>
-						<th>角色名称</th>
-						<th>角色描述</th>
-						<th>权限号</th>
-						<th>操作</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>教师</td>
-						<td>普通教师权限：包括发布实验任务，批阅实验报告等等</td>
-						<td>0x001</td>
-						<td>
-							<div class="ButtonTd">
-								<div class="ButtonDiv">
-									<button class="Button" >选择</button>
-								</div>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td>学生</td>
-						<td>普通学生权限：包括在线撰写实验报告，提交实验报告等等</td>
-						<td>0x002</td>
-						<td>
-							<div class="ButtonTd">
-								<div class="ButtonDiv">
-									<button class="Button">选择</button>
-								</div>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td>管理员</td>
-						<td>普通管理员权限：包括用户管理，实验课程管理，权限管理等等</td>
-						<td>0x003</td>
-						<td>
-							<div class="ButtonTd">
-								<div class="ButtonDiv">
-									<button class="Button">选择</button>
-								</div>
-							</div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		
 	</div>
-	<!--用户权限结束-->
+	<!--添加教师结束-->
 
 </body>
 </html>
