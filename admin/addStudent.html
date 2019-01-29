@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="../css/admin/index.css" />
 	<link rel="stylesheet" href="../css/admin/user.css" />
 	<link rel="stylesheet" href="../css/admin/common.css" />
-	<!-- <link rel="stylesheet" href="../css/admin/addTeacher.css" /> -->
+	<!-- <link rel="stylesheet" href="../css/admin/addStudent.css" /> -->
 	<link rel="stylesheet" href="../css/admin/add.css" />
 	<link rel="stylesheet" href="../css/common/common.css" />
 	<link rel="stylesheet" href="../fontawesome-5.5.0/css/font-awesome.min.css" />
@@ -141,7 +141,7 @@
 	<div id="MainForm">
 		<div class="form_boxA">
 			<div class="a">
-				<h2>添加新教师</h2>
+				<h2>添加新学生</h2>
 			</div>
 
 			<div class="add_div">
@@ -149,14 +149,14 @@
 					<div style="margin:5px; " class="add_list">
 						<label class="add_label">
 							<span class="xing">*</span>
-							<strong>姓名：</strong>
+							<strong>学号：</strong>
 						</label>
 						<input type="text" name="" placeholder="请输入姓名" class="add_input">
 					</div>
 					<div style="margin:5px; " class="add_list">
 						<label class="add_label">
 							<span class="xing">*</span>
-							<strong>职工号：</strong>
+							<strong>姓名：</strong>
 						</label>
 						<input type="text" name="" placeholder="请输入职工号" class="add_input">
 					</div>
@@ -165,7 +165,7 @@
 							<span class="xing">*</span>
 							<strong>性别：</strong>
 						</label>
-						<select>
+						<select class="add_select">
 							<option>男</option>
 							<option>女</option>
 						</select>
@@ -173,33 +173,47 @@
 					<div style="margin:5px; " class="add_list">
 						<label class="add_label">
 							<span class="xing">*</span>
-							<strong>职称：</strong>
+							<strong>年级：</strong>
 						</label>
-						<input type="text" name="" placeholder="请输入职称" class="add_input">
+						<select class="add_select">
+							<option>2014</option>
+							<option>2015</option>
+							<option>2016</option>
+							<option>2017</option>
+							<option>2018</option>
+						</select>
 					</div>
 					<div style="margin:5px; " class="add_list">
 						<label class="add_label">
 							<span class="xing">*</span>
-							<strong>学位：</strong>
+							<strong>学院：</strong>
 						</label>
-						<input type="text" name="" placeholder="请输入学位" class="add_input">
+						<select class="add_select">
+							<option>计算机学院</option>
+							<option>教育学院</option>
+							<option>电子学院</option>
+						</select>
 					</div>
 					<div style="margin:5px; " class="add_list">
 						<label class="add_label">
 							<span class="xing">*</span>
-							<strong>邮箱：</strong>
+							<strong>专业班级：</strong>
 						</label>
-						<input type="text" name="" placeholder="请输入邮箱" class="add_input">
+						<select class="add_select">
+							<option>计科1班</option>
+							<option>计科2班</option>
+							<option>计科3班</option>
+							<option>计科4班</option>
+						</select>
 					</div>
-					
 					<div style="margin:5px; " class="add_list">
 						<label class="add_label">
 							<span class="xing">*</span>
 							<strong>权限：</strong>
 						</label>
-						<select>
-							<option>普通教师</option>
-							<option>教师管理员</option>
+						<select class="add_select">
+							<option>普通学生</option>
+							<option>教师助理</option>
 						</select>
 					</div>
 					<div class="ButtonDiv">
